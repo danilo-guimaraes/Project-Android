@@ -86,7 +86,7 @@ android-history/
 ## 🚀 Como Visualizar
 
 ### Opção 1 — GitHub Pages
-Acesse diretamente: `https://danilo-guimaraes.github.io/android-history/`
+Acesse diretamente: `https://danilo-guimaraes.github.io/Project-Android/`
 
 ### Opção 2 — Localmente
 ```bash
