@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+NZ+Guides&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('./idroid.otf') format('opentype');
+    font-weight: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+img:hover {
+    border: 0.1px solid transparent;
+    margin-left: 0.2%;
+}
+
+:root {
+    --cor0: #D0C6ED;
+    --cor1: #E277ED;
+    --cor2: #77A5ED;
+    --cor3: #9477ED;
+    --cor4: #BB77ED;
+    --cor5: #777FED;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after {
+    content: '\1f517';
+}
+
+
+/* <!--CABCALHO--> */
+header {
+    background-image: linear-gradient(to left, transparent, var(--cor1), var(--cor5), transparent);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+    text-shadow: 10px 10px 10px var(--cor5);
+
+
+}
+
+header>h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 10px 10px 10px var(--cor5);
+    font-weight: normal;
+
+}
+
+header>h1:hover {
+    font-weight: bold;
+    border: 0.1px solid transparent;
+    margin-left: 0.2%;
+}
+
+header>p {
+
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+
+}
+
+header>p:hover {
+    font-weight: bold;
+    border: 0.1px solid transparent;
+    margin-left: 0.2%;
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 5px 5px 5px var(--cor0);
+}
+
+nav {
+    background-image: linear-gradient(to left, transparent, var(--cor1), var(--cor5), transparent);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgb(0, 0, 0, 0.192);
+}
+
+nav>a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+
+}
+
+nav>a:hover {
+    text-shadow: 10px 10px 10px var(--cor0);
+    color: var(--cor1);
+
+    border: 0.1px solid transparent;
+    margin-left: 0.2%;
+
+
+}
+
+/* <!--MAIN--> */
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 40px 0px var(--cor5);
+}
+
+main img {
+    width: 100%;
+    box-shadow: 0px 0px 4px 0px var(--cor5);
+    border-radius: 10px;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    text-shadow: 10px 10px 10px var(--cor5);
+}
+
+main h1:hover {
+    border: 0.1px solid transparent;
+    margin-left: 0.2%;
+    font-weight: bold;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor5);
+    font-size: 1.3em;
+    background-image: linear-gradient(to left,transparent,var(--cor5) ,var(--cor0),
+            var(--cor0),transparent);
+    text-indent: 8px;
+    font-weight: normal;
+    text-shadow: 10px 10px 10px var(--cor5);
+}
+
+main h2:hover {
+    border: 0.1px solid transparent;
+    margin-left: 0.2%;
+    font-weight: bold;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 6px;
+    text-shadow: 10px 10px 10px var(--cor5);
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(153, 255, 0);
+    padding: 2px 6px;
+    background-image: linear-gradient(to bottom,
+            var(--cor5), var(--cor4));
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+    border: 0.1px solid transparent;
+    margin-left: 0.1%;
+}
+
+div.video {
+    background-image: linear-gradient(to bottom, transparent, var(--cor2),
+            var(--cor5), transparent);
+    margin-bottom: 30px;
+    margin: 0 -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.6%;
+    position: relative;
+}
+
+div.video>iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px var(--cor5);
+}
+
+/* <!--ASIDE--> */
+
+aside {
+    background-image: linear-gradient(to top, var(--cor2), transparent,
+            var(--cor5));
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.288);
+}
+
+aside>h3 {
+    background-image: linear-gradient(to bottom, var(--cor2),
+            var(--cor5), transparent);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0 0px;
+}
+
+aside>ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+
+
+
+}
+
+aside>ul>li>abbr {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    color: black;
+    background-image: linear-gradient(to left, var(--cor2),
+            var(--cor5), transparent);
+    font-weight: bold;
+
+
+}
+
+
+/* <!--RODAPE--> */
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    background-image: linear-gradient(to left, transparent, var(--cor1), var(--cor5), transparent);
+}
+
+footer>p>a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    /* background-image: linear-gradient(to left, transparent, var(--cor1), var(--cor5), transparent); */
+
+
+}
+a.rodape:hover{
+    background-image: linear-gradient(to right, var(--cor1), var(--cor5));
+}
+a.esquerda:hover {
+    background-image: linear-gradient(to left,  var(--cor1), var(--cor5));
+}
+footer a:hover {
+    text-decoration: underline;
+    /* color: var(--cor1); */
+}
+footer:hover{
+    background-image: linear-gradient(to letf, transparent, var(--cor1), var(--cor5), transparent);
+}
